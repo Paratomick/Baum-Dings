@@ -1,0 +1,201 @@
+Button:pressed {
+    -fx-translate-y: 2;
+}
+
+Button {
+    -fx-background-color: grey, darkgrey;
+
+    -fx-min-height: 50px;
+    -fx-min-width: 50px;
+    -fx-background-radius: 4px, 4px;
+    -fx-background-insets: 2px 2px -6px 2px, 3px;
+
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+TextField {
+    -fx-background-color: grey, darkgrey, grey, lightgrey;
+
+    -fx-min-height: 50px;
+    -fx-min-width: 50px;
+    -fx-background-radius: 4px, 4px, 3px, 3px;
+    -fx-background-insets: 2px 2px -6px 2px, 3px, 5px, 8px 6px 6px 6px;
+
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+/*Playing Field*/
+World {
+    -fx-background-color: darkslategray;
+    -fx-alignment: center;
+}
+
+World > HBox {
+    -fx-alignment: center;
+}
+
+Feld {
+    -fx-min-height: 40px;
+    -fx-min-width: 40px;
+    -fx-background-radius: 4px, 4px;
+    -fx-background-insets: 2px 2px -6px 2px, 3px;
+}
+
+NumberFeld {
+    -fx-min-height: 40px;
+    -fx-min-width: 40px;
+    -fx-background-radius: 4px;
+    -fx-background-insets: 2px;
+}
+
+NumberFeld > TextField {
+    -fx-alignment: center;
+    -fx-min-height: 40px;
+    -fx-min-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-pref-width: 40px;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+
+    -fx-background-color: transparent;
+}
+
+.empty {
+    -fx-background-color: grey, darkgrey;
+}
+
+.grass {
+    -fx-background-color: darkgreen, green;
+}
+
+.tent {
+    -fx-background-color: darkgreen, green, darkgreen, #b30000, #e60000;
+    -fx-background-radius: 4px, 4px, 6px, 4px, 4px;
+    -fx-background-insets: 2px 2px -6px 2px, 3px, 8px, 4px 10px 12px 10px, 4px 10px 18px 10px;
+}
+
+.connectedTent {
+    -fx-background-color: #8a8a00, #a6a600, #8a8a00, #b30000, #e60000;
+}
+
+.wrongTent {
+    -fx-background-color: darkred, #a60000, darkred, #b30000, #e60000;
+}
+
+.wrongConnectionTent {
+    -fx-background-color: #8a008a, #a600a6, #8a008a, #b30000, #e60000;
+}
+
+.tree {
+    -fx-background-color: darkgreen, green, darkgreen, #6e350f, saddlebrown;
+    -fx-background-radius: 4px, 4px, 10px, 6px, 6px;
+    -fx-background-insets: 2px 2px -6px 2px, 3px, 12px 10px 10px 10px, 0px 14px 14px 14px, 0px 14px 30px 14px;
+}
+
+.connectedTree {
+    -fx-background-color: #8a8a00, #a6a600, #8a8a00, #6e350f, saddlebrown;
+}
+
+.wrongTree {
+    -fx-background-color: darkred, #a60000, darkred, #6e350f, saddlebrown;
+}
+
+.wrongConnectionTree {
+    -fx-background-color: #8a008a, #a600a6, #8a008a, #6e350f, saddlebrown;
+}
+
+.numWhite > TextField {
+    -fx-text-fill: white;
+}
+
+.numGrey > TextField {
+    -fx-text-fill: grey;
+}
+
+.numRed > TextField {
+    -fx-text-fill: red;
+}
+
+/*Side Menu*/
+#sideMenu {
+    -fx-alignment: center-right;
+}
+
+.sideBtnMenu {
+    -fx-background-color: grey, darkgrey, #cccccc, #cccccc, #cccccc, white, white, white;
+    -fx-background-radius: 4px, 4px, 2px, 2px, 2px, 2px, 2px, 2px;
+    -fx-background-insets: 2px 2px -6px 2px, 3px,
+    10px 10px 34px 10px, 22px 10px 22px 10px, 34px 10px 10px 10px,
+    12px 10px 34px 10px, 24px 10px 22px 10px, 36px 10px 10px 10px;
+}
+
+.sideBtnBack {
+    -fx-background-color: grey, darkgrey;
+}
+
+.sideBtnSave {
+    -fx-background-color: #918080, #bea9a9;
+}
+
+.sideBtnLoad {
+    -fx-background-color: #7f7f8f, #a8a8bd;
+}
+
+/*Menu*/
+Menu {
+    -fx-alignment: center;
+}
+
+Menu > HBox {
+    -fx-alignment: center;
+}
+
+Menu Label {
+    -fx-background-color: grey, darkgrey;
+
+    -fx-min-height: 50px;
+    -fx-min-width: 24px;
+    -fx-background-radius: 4px, 4px;
+    -fx-background-insets: 2px 2px -6px 2px, 3px;
+
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+Menu > TextField {
+    -fx-pref-width: 100px;
+}
+
+Menu Button {
+    -fx-pref-width: 224px;
+}
+
+/*Victory Screen*/
+VictoryScreen {
+    -fx-alignment: center;
+}
+
+VictoryScreen Label {
+    -fx-background-color: grey, darkgrey;
+
+    -fx-min-height: 50px;
+    -fx-min-width: 280px;
+    -fx-background-radius: 4px, 4px;
+    -fx-background-insets: 2px 2px -6px 2px, 3px;
+
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+VictoryScreen Button {
+    -fx-min-width: 280px;
+}
